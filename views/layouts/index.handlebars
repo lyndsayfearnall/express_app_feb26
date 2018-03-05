@@ -2,10 +2,22 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Express</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    {{#if cms}}
+      <link rel="stylesheet" href="/stylesheets/formstyle.css">
+    {{/if}}
+    <title>{{title}}</title>
   </head>
   <body>
     {{{ body }}}
+
+<!--conditional rendering -->
+    {{#if mainpage}}
     <script src="javascripts/main.js"></script>
+    {{/if}}
+
+    {{#if cms}}
+    <script src="/javascripts/cmsHandler.js"></script>
+    {{/if}}
   </body>
 </html>

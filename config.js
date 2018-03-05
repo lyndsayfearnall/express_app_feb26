@@ -3,7 +3,9 @@ var config = {
   user: "root",
   password: "root",
   port: 8889, //3306 for LAMP/WAMP
-  database: "db_cooperInfo"
+  database: "db_cooperInfo",
+
+  kidsmode: false
 
 };
 

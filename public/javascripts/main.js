@@ -33,5 +33,5 @@
 
 
   getButton.forEach(button => button.addEventListener('click', getData));
-  deleteButton.forEach(button => button.addEventListener('click', deleteARecord);
+  deleteButton.forEach(button => button.addEventListener('click', deleteARecord));
 })();
